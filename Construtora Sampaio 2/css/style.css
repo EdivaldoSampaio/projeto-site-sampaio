@@ -1,0 +1,221 @@
+/* Estilos básicos para o site */
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0096c7;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    
+ 
+  }
+
+  .logo {
+    width: 60px;
+  
+  }
+  header {
+    background: rgb(242,245,246); 
+    color: #0a0a0a;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  
+  header nav ul li a:hover {
+    color: #83d6f5;
+  } 
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+ 
+  
+  }
+  
+  nav ul li a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: bold;
+  }
+   
+  .descricao {
+    padding: 100px;
+    text-align: justify;
+    background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .descricao h2 {
+    
+    margin-top: 70px;
+    font-size: 36px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+
+  }
+
+    .produto {
+    text-align: center;
+    animation: slideIn 1s;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .produto img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .produto:hover img {
+    transform: scale(1.1);
+  }
+
+  .produtos {
+    padding: 80px 0;
+    text-align: center;
+    background: rgb(242,245,246); 
+    background: -moz-linear-gradient(top,  rgb(242,245,246) 0%, rgb(200,215,220) 69%); 
+    background: -webkit-linear-gradient(top,  rgb(242,245,246) 0%,rgb(200,215,220) 69%); 
+    background: linear-gradient(to bottom,  rgb(242,245,246) 0%,rgb(200,215,220) 69%);  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); 
+  }
+  
+  .produtos h2 {
+    font-size: 36px;
+    margin-bottom: 100px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  .produto {
+    text-align: center;
+  }
+  
+  .produto img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .produto h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .produto p {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  .contato {
+    margin-bottom: 300px;
+    background: rgb(200,215,220); 
+    background: -moz-linear-gradient(top,  rgb(200,215,220) 31%, rgb(242,245,246) 100%); 
+    background: -webkit-linear-gradient(top,  rgb(200,215,220) 31%,rgb(242,245,246) 100%); 
+    background: linear-gradient(to bottom,  rgb(200,215,220) 31%,rgb(242,245,246) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8d7dc', endColorstr='#f2f5f6',GradientType=0 ); 
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .contato form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contato input,
+  .contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .contato button {
+    text-align: center;
+    background: #0096c7;
+    color: #FFFFFF;
+    box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+ 
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    border: none;
+  }
+  
+  
+  .contato button:hover {
+    background-color: #007fa3;
+  }
+  
+  footer {
+    background-color: rgb(200,215,220); 
+    color: #777;
+    padding: 20px 0;
+    text-align:center;
+
+}
+
+footer p {
+  margin: 0;
+}
+
